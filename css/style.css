@@ -1,15 +1,41 @@
-html {
-    font-size: 10px;
-}
-
-div {
-    font-size: 10em; 
-}
 
 h1 {
     color: rgb(145, 33, 236);
-    font-size: 3 rem;
+    font-size: 3rem;
     background-color: aquamarine;
-    width: 20%;
+    border: 9px dotted gray;
+    width: 50%; 
 }
 
+h2 {
+font-family: 'Open Sans', sans-serif;
+font-weight: normal;
+text-align: center; 
+border: 3px solid blue;
+border
+width: 50%;
+}
+
+p {
+    background-color: black;
+    color: hsl(0, 0%, 100%);
+}
+
+span {
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color: yellow;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+ul {
+    font-size: 50px;
+    list-style: none; 
+}
+
+ol {
+    font-size: 50px;
+    list-style: upper-latin;
+    margin-left: 40px;
+}
