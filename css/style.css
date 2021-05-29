@@ -1,4 +1,6 @@
-
+body {
+    background-color: white;
+}
 
 
 h2 {
@@ -44,6 +46,10 @@ ol {
 
 /* Explicando Cascade e Especificidade */
 
+.titulo.titulo-pagina{
+    color: purple;
+}
+
 .titulo-pagina {
     font-size: 5rem;
     border: 5px solid red;
@@ -53,3 +59,10 @@ ol {
     border-style: dashed; 
     color: green; 
 }
+h1 {
+    color: blue ; 
+}
+/*
+Regra de especificadade::after
+0 - 0 - 0 
+*/
