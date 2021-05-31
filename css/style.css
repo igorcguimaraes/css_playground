@@ -112,3 +112,35 @@ Regra de especificadade::after
     background-color: white;
     color: black; 
 }
+
+.nav-menu{
+    border: 2px solid blue;
+    list-style: none;
+}
+
+.menu-item{
+    border: 2px dashed purple;
+    background: gray;
+    margin-bottom: 20px; 
+}
+
+.menu-item:last-child {
+    margin-bottom: 0px;
+}
+
+.menu-item:first-child{
+    color: red;
+}
+
+.menu-item:nth-child(3){
+    background-color: green;
+}
+
+.menu-item:nth-child(n + 2){
+    font-weight:bold; 
+}
+
+.meu-input[type="number"] {
+    font-size: 90px;
+    background-color: red;
+}
