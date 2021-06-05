@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     background-color: white;
 }
@@ -164,3 +168,29 @@ Regra de especificadade::after
 <strong>
 <em>
 */
+
+.box{
+    background-color: blue;
+    color: white;
+    width: 100px;
+    /* height: 100px;  */
+    display: block; 
+    /* border: 10px solid green; */
+
+    /* padding-top: 40px; 
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 30px; */
+
+    /* padding: 10px 10px; */
+
+    padding-top: 10px; 
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px; 
+
+    margin: 10px; 
+    border-top: 10px solid green; 
+    border-bottom: 4px dashed green;
+     
+}
