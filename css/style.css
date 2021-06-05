@@ -17,14 +17,6 @@ p {
     color: hsl(0, 0%, 100%);
 }
 
-span {
-    font-size: 40px;
-    font-family: 'Courier New', Courier, monospace;
-    color: yellow;
-    text-decoration: underline;
-    text-transform: capitalize;
-}
-
 ul {
     font-size: 50px;
     list-style: none; 
@@ -121,7 +113,10 @@ Regra de especificadade::after
 .menu-item{
     border: 2px dashed purple;
     background: gray;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+    display: inline-block;  
+    font-size: 30px;
+    min-width: 200px; 
 }
 
 .menu-item:last-child {
@@ -144,3 +139,28 @@ Regra de especificadade::after
     font-size: 90px;
     background-color: red;
 }
+
+.bloco-inicial {
+    font-size: 50px;
+    background-color:tomato ;
+    margin-bottom: 20px;
+    display: block: /*Por padrão div é block */
+}
+
+.span-inicial {
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color: yellow;
+    text-decoration: underline;
+    text-transform: uppercase;
+    display: inline; /* Por padrão span é inline */ 
+}
+.bloco-escondido{
+    display: none;
+}
+/* Elementos importantes que são inline,
+<span>
+<a>
+<strong>
+<em>
+*/
