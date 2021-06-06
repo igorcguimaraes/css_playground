@@ -2,11 +2,15 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: white;
+html{
+    font-size: 16px;
 }
 
+body {
+    margin: 0; 
+}
 
+/* 
 h2 {
 font-family: 'Open Sans', sans-serif;
 font-weight: normal;
@@ -14,12 +18,12 @@ text-align: center;
 border: 3px solid blue;
 border
 width: 50%;
-}
+} */
 
-p {
+/* p {
     background-color: black;
     color: hsl(0, 0%, 100%);
-}
+} */
 
 ul {
     font-size: 50px;
@@ -193,4 +197,109 @@ Regra de especificadade::after
     border-top: 10px solid green; 
     border-bottom: 4px dashed green;
      
+}
+
+.wrapper{
+    /* Como esse elemento é uma div, por padrão ele é display block */
+    display: block;
+    background-color: tomato;
+    font-size: 1.5rem;
+    width: 40rem; 
+    margin: 0 auto;
+}
+
+.wrapper p {
+    margin-top: 0;
+}
+
+.wrapper .imagem-principal{
+    float: left;
+    /* border: 5px solid magenta; */
+    /* padding: 10px; */
+    margin: 0 20px 5px 0; 
+}
+
+.wrapper .paragrafo-clear {
+    /* clear: both;  */
+}
+
+.wrapper .imagem-direita{
+    float: right; 
+}
+
+.wrapper::after{
+    content:'';
+    display: table;
+    clear: both; 
+
+}
+
+.wrapper-2 {
+    /* Como esse elemento é uma div, por padrão ele é display block */
+    background-color: tomato;
+    font-size: 1.5rem;
+    width: 50rem; 
+    margin: 0 auto;
+}
+
+.wrapper-2::after{
+    content:'';
+    display: table;
+    clear: both; 
+
+}
+
+.box-1{
+    height: 200px;
+    width: 33%;
+}
+
+.red {
+    background-color: red;
+    float: right; 
+}
+
+.blue {
+    background-color: blue;
+    float: right; 
+}
+
+.green {
+    background-color: green;
+    
+}
+
+.wrapper-3 {
+    background-color: tomato;
+    font-size: 1.5rem;
+    width: 50rem; 
+    margin: 20px auto;
+}
+
+.wrapper-3::after{
+    content:'';
+    display: table;
+    clear: both; 
+}
+.servico {
+    width: 31%;
+    border: 1px solid blue;  
+    float: left; 
+    min-height: 200px;
+    margin: 0 1%;
+    padding: 0 1%; 
+}
+
+.wrapper-4{
+    border: 2px solid blue;
+    padding: 20px;
+    margin: 40px; 
+    position: relative
+}
+.filho{
+    position: fixed;
+    background-color: red;
+    padding: 20px; 
+    top: 20px; 
+    left: 20px;
 }
